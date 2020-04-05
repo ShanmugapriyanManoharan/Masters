@@ -1,0 +1,22 @@
+NET "clk" LOC = P125;
+#NET "clk" LOC = P56;
+NET "reset" LOC = P55;
+NET "key1" LOC = P112;
+NET "key2" LOC = P113;
+#NET "sseg_sel[0]" LOC = P70;
+#NET "sseg_sel[1]" LOC = P69;
+#NET "sseg_sel[2]" LOC = P68;
+#NET "sseg_sel[3]" LOC = P53;
+NET "sseg_sel[3]" LOC = P70;
+NET "sseg_sel[2]" LOC = P69;
+NET "sseg_sel[1]" LOC = P68;
+NET "sseg_sel[0]" LOC = P53;
+NET "sseg[7]" LOC = P52;
+NET "sseg[6]" LOC = P41;
+NET "sseg[5]" LOC = P40;
+NET "sseg[4]" LOC = P51;
+NET "sseg[3]" LOC = P50;
+NET "sseg[2]" LOC = P47;
+NET "sseg[1]" LOC = P44;
+NET "sseg[0]" LOC = P46;
+
