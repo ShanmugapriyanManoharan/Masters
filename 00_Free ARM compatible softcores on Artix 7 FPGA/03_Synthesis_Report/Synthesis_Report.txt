@@ -1,0 +1,1732 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Jan  7 20:26:41 2019
+# Process ID: 25504
+# Current directory: H:/VHDL/Research_Project/change1/change1.runs/synth_1
+# Command line: vivado.exe -log TOP_STORM_core.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_STORM_core.tcl
+# Log file: H:/VHDL/Research_Project/change1/change1.runs/synth_1/TOP_STORM_core.vds
+# Journal file: H:/VHDL/Research_Project/change1/change1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TOP_STORM_core.tcl -notrace
+Command: synth_design -top TOP_STORM_core -part xc7a35tcsg324-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 29064 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 356.664 ; gain = 99.699
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP_STORM_core' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/TOPModule.vhd:31]
+	Parameter I_CACHE_PAGES bound to: 4 - type: integer 
+	Parameter I_CACHE_PAGE_SIZE bound to: 16 - type: integer 
+	Parameter D_CACHE_PAGES bound to: 4 - type: integer 
+	Parameter D_CACHE_PAGE_SIZE bound to: 4 - type: integer 
+	Parameter BOOT_VECTOR bound to: 32'b00000000000000000000000000000000 
+	Parameter IO_UC_BEGIN bound to: 32'b11111111111111111110000000100000 
+	Parameter IO_UC_END bound to: 32'b11111111111111111110000000100100 
+INFO: [Synth 8-3491] module 'STORM_TOP' declared at 'H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/STORM_TOP.vhd:34' bound to instance 'STORM_TOP_INST' of component 'STORM_TOP' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/TOPModule.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'STORM_TOP' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/STORM_TOP.vhd:84]
+	Parameter I_CACHE_PAGES bound to: 4 - type: integer 
+	Parameter I_CACHE_PAGE_SIZE bound to: 16 - type: integer 
+	Parameter D_CACHE_PAGES bound to: 4 - type: integer 
+	Parameter D_CACHE_PAGE_SIZE bound to: 4 - type: integer 
+	Parameter BOOT_VECTOR bound to: 0 - type: integer 
+	Parameter IO_UC_BEGIN bound to: -8160 - type: integer 
+	Parameter IO_UC_END bound to: -8156 - type: integer 
+	Parameter BOOT_VEC bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'CORE' declared at 'H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/CORE.vhd:34' bound to instance 'PROCESSOR_CORE' of component 'CORE' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/STORM_TOP.vhd:160]
+INFO: [Synth 8-638] synthesizing module 'CORE' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/CORE.vhd:108]
+	Parameter BOOT_VEC bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'OPCODE_DECODER' declared at 'H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/OPCODE_DECODER.vhd:20' bound to instance 'Instruction_Decoder' of component 'OPCODE_DECODER' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/CORE.vhd:177]
+INFO: [Synth 8-638] synthesizing module 'OPCODE_DECODER' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/OPCODE_DECODER.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'OPCODE_DECODER' (1#1) [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/OPCODE_DECODER.vhd:29]
+INFO: [Synth 8-3491] module 'FLOW_CTRL' declared at 'H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/FLOW_CTRL.vhd:16' bound to instance 'Operation_Flow_Control' of component 'FLOW_CTRL' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/CORE.vhd:189]
+INFO: [Synth 8-638] synthesizing module 'FLOW_CTRL' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/FLOW_CTRL.vhd:70]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/FLOW_CTRL.vhd:339]
+INFO: [Synth 8-256] done synthesizing module 'FLOW_CTRL' (2#1) [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/FLOW_CTRL.vhd:70]
+	Parameter BOOT_VEC bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'MC_SYS' declared at 'H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MC_SYS.vhd:16' bound to instance 'Machine_Control_System' of component 'MC_SYS' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/CORE.vhd:220]
+INFO: [Synth 8-638] synthesizing module 'MC_SYS' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MC_SYS.vhd:98]
+	Parameter BOOT_VEC bound to: 0 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element cmsr_acc_case_v_reg was removed.  [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MC_SYS.vhd:390]
+WARNING: [Synth 8-6014] Unused sequential element smsr_acc_case_v_reg was removed.  [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MC_SYS.vhd:424]
+WARNING: [Synth 8-6014] Unused sequential element PC_DELAY_BUF_reg[6] was removed.  [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MC_SYS.vhd:629]
+WARNING: [Synth 8-6014] Unused sequential element PC_DELAY_BUF_reg[5] was removed.  [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MC_SYS.vhd:629]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'MCR_CMSR_reg' in module 'MC_SYS' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MC_SYS.vhd:348]
+INFO: [Synth 8-256] done synthesizing module 'MC_SYS' (3#1) [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MC_SYS.vhd:98]
+INFO: [Synth 8-3491] module 'REG_FILE' declared at 'H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/REG_FILE.vhd:17' bound to instance 'Register_File' of component 'REG_FILE' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/CORE.vhd:277]
+INFO: [Synth 8-638] synthesizing module 'REG_FILE' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/REG_FILE.vhd:50]
+INFO: [Synth 8-3491] module 'ADR_TRANSLATION_UNIT' declared at 'H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/REG_FILE.vhd:172' bound to instance 'write_access_data_port' of component 'ADR_TRANSLATION_UNIT' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/REG_FILE.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'ADR_TRANSLATION_UNIT' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/REG_FILE.vhd:188]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/REG_FILE.vhd:200]
+INFO: [Synth 8-256] done synthesizing module 'ADR_TRANSLATION_UNIT' (4#1) [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/REG_FILE.vhd:188]
+INFO: [Synth 8-3491] module 'ADR_TRANSLATION_UNIT' declared at 'H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/REG_FILE.vhd:172' bound to instance 'read_access_port_a' of component 'ADR_TRANSLATION_UNIT' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/REG_FILE.vhd:117]
+INFO: [Synth 8-3491] module 'ADR_TRANSLATION_UNIT' declared at 'H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/REG_FILE.vhd:172' bound to instance 'read_access_port_b' of component 'ADR_TRANSLATION_UNIT' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/REG_FILE.vhd:126]
+INFO: [Synth 8-3491] module 'ADR_TRANSLATION_UNIT' declared at 'H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/REG_FILE.vhd:172' bound to instance 'read_access_port_c' of component 'ADR_TRANSLATION_UNIT' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/REG_FILE.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'REG_FILE' (5#1) [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/REG_FILE.vhd:50]
+INFO: [Synth 8-3491] module 'OPERAND_UNIT' declared at 'H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/OPERAND_UNIT.vhd:16' bound to instance 'Operand_Fetch_Unit' of component 'OPERAND_UNIT' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/CORE.vhd:297]
+INFO: [Synth 8-638] synthesizing module 'OPERAND_UNIT' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/OPERAND_UNIT.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'OPERAND_UNIT' (6#1) [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/OPERAND_UNIT.vhd:54]
+INFO: [Synth 8-3491] module 'MS_UNIT' declared at 'H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MS_UNIT.vhd:16' bound to instance 'Multishifter' of component 'MS_UNIT' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/CORE.vhd:321]
+INFO: [Synth 8-638] synthesizing module 'MS_UNIT' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MS_UNIT.vhd:53]
+INFO: [Synth 8-3491] module 'MULTIPLY_UNIT' declared at 'H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MULTIPLY_UNIT.vhd:16' bound to instance 'Multiplicator' of component 'MULTIPLY_UNIT' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MS_UNIT.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'MULTIPLY_UNIT' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MULTIPLY_UNIT.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'MULTIPLY_UNIT' (7#1) [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MULTIPLY_UNIT.vhd:31]
+INFO: [Synth 8-3491] module 'BARREL_SHIFTER' declared at 'H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/BARREL_SHIFTER.vhd:16' bound to instance 'Barrelshifter' of component 'BARREL_SHIFTER' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MS_UNIT.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'BARREL_SHIFTER' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/BARREL_SHIFTER.vhd:36]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/BARREL_SHIFTER.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'BARREL_SHIFTER' (8#1) [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/BARREL_SHIFTER.vhd:36]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'MSU_FW_O_reg' in module 'MS_UNIT' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MS_UNIT.vhd:140]
+INFO: [Synth 8-256] done synthesizing module 'MS_UNIT' (9#1) [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MS_UNIT.vhd:53]
+INFO: [Synth 8-3491] module 'ALU' declared at 'H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/ALU.vhd:16' bound to instance 'Operator' of component 'ALU' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/CORE.vhd:344]
+INFO: [Synth 8-638] synthesizing module 'ALU' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/ALU.vhd:56]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/ALU.vhd:105]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (10#1) [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/ALU.vhd:56]
+INFO: [Synth 8-3491] module 'LOAD_STORE_UNIT' declared at 'H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/LOAD_STORE_UNIT.vhd:16' bound to instance 'Memory_Access' of component 'LOAD_STORE_UNIT' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/CORE.vhd:369]
+INFO: [Synth 8-638] synthesizing module 'LOAD_STORE_UNIT' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/LOAD_STORE_UNIT.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'LOAD_STORE_UNIT' (11#1) [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/LOAD_STORE_UNIT.vhd:61]
+INFO: [Synth 8-3491] module 'WB_UNIT' declared at 'H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/WB_UNIT.vhd:16' bound to instance 'Data_Write_Back' of component 'WB_UNIT' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/CORE.vhd:395]
+INFO: [Synth 8-638] synthesizing module 'WB_UNIT' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/WB_UNIT.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'WB_UNIT' (12#1) [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/WB_UNIT.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'CORE' (13#1) [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/CORE.vhd:108]
+	Parameter CACHE_PAGES bound to: 4 - type: integer 
+	Parameter LOG2_CACHE_PAGES bound to: 2 - type: integer 
+	Parameter PAGE_SIZE bound to: 16 - type: integer 
+	Parameter LOG2_PAGE_SIZE bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'CACHE' declared at 'H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/CACHE.vhd:22' bound to instance 'I_CACHE_INST' of component 'CACHE' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/STORM_TOP.vhd:216]
+INFO: [Synth 8-638] synthesizing module 'CACHE' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/CACHE.vhd:83]
+	Parameter CACHE_PAGES bound to: 4 - type: integer 
+	Parameter LOG2_CACHE_PAGES bound to: 2 - type: integer 
+	Parameter PAGE_SIZE bound to: 16 - type: integer 
+	Parameter LOG2_PAGE_SIZE bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'CACHE' (14#1) [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/CACHE.vhd:83]
+	Parameter CACHE_PAGES bound to: 4 - type: integer 
+	Parameter LOG2_CACHE_PAGES bound to: 2 - type: integer 
+	Parameter PAGE_SIZE bound to: 4 - type: integer 
+	Parameter LOG2_PAGE_SIZE bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'CACHE' declared at 'H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/CACHE.vhd:22' bound to instance 'D_CACHE_INST' of component 'CACHE' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/STORM_TOP.vhd:268]
+INFO: [Synth 8-638] synthesizing module 'CACHE__parameterized1' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/CACHE.vhd:83]
+	Parameter CACHE_PAGES bound to: 4 - type: integer 
+	Parameter LOG2_CACHE_PAGES bound to: 2 - type: integer 
+	Parameter PAGE_SIZE bound to: 4 - type: integer 
+	Parameter LOG2_PAGE_SIZE bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'CACHE__parameterized1' (14#1) [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/CACHE.vhd:83]
+	Parameter I_CACHE_PAGES bound to: 4 - type: integer 
+	Parameter LOG2_I_CACHE_PAGES bound to: 2 - type: integer 
+	Parameter I_CACHE_PAGE_SIZE bound to: 16 - type: integer 
+	Parameter LOG2_I_CACHE_PAGE_SIZE bound to: 4 - type: integer 
+	Parameter D_CACHE_PAGES bound to: 4 - type: integer 
+	Parameter LOG2_D_CACHE_PAGES bound to: 2 - type: integer 
+	Parameter D_CACHE_PAGE_SIZE bound to: 4 - type: integer 
+	Parameter LOG2_D_CACHE_PAGE_SIZE bound to: 2 - type: integer 
+	Parameter IO_UC_BEGIN bound to: -8160 - type: integer 
+	Parameter IO_UC_END bound to: -8156 - type: integer 
+INFO: [Synth 8-3491] module 'BUS_UNIT' declared at 'H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/BUS_UNIT.vhd:20' bound to instance 'BUS_UNIT_INST' of component 'BUS_UNIT' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/STORM_TOP.vhd:317]
+INFO: [Synth 8-638] synthesizing module 'BUS_UNIT' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/BUS_UNIT.vhd:106]
+	Parameter I_CACHE_PAGES bound to: 4 - type: integer 
+	Parameter LOG2_I_CACHE_PAGES bound to: 2 - type: integer 
+	Parameter I_CACHE_PAGE_SIZE bound to: 16 - type: integer 
+	Parameter LOG2_I_CACHE_PAGE_SIZE bound to: 4 - type: integer 
+	Parameter D_CACHE_PAGES bound to: 4 - type: integer 
+	Parameter LOG2_D_CACHE_PAGES bound to: 2 - type: integer 
+	Parameter D_CACHE_PAGE_SIZE bound to: 4 - type: integer 
+	Parameter LOG2_D_CACHE_PAGE_SIZE bound to: 2 - type: integer 
+	Parameter IO_UC_BEGIN bound to: -8160 - type: integer 
+	Parameter IO_UC_END bound to: -8156 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element WORD_BUF_reg was removed.  [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/BUS_UNIT.vhd:222]
+INFO: [Synth 8-256] done synthesizing module 'BUS_UNIT' (15#1) [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/BUS_UNIT.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'STORM_TOP' (16#1) [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/STORM_TOP.vhd:84]
+	Parameter MEM_SIZE bound to: 256 - type: integer 
+	Parameter LOG2_MEM_SIZE bound to: 8 - type: integer 
+	Parameter OUTPUT_GATE bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'MEMORY' declared at 'H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MEMORY.vhd:14' bound to instance 'INTERNAL_MEMORY' of component 'MEMORY' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/TOPModule.vhd:335]
+INFO: [Synth 8-638] synthesizing module 'MEMORY' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MEMORY.vhd:38]
+	Parameter MEM_SIZE bound to: 256 - type: integer 
+	Parameter LOG2_MEM_SIZE bound to: 8 - type: integer 
+	Parameter OUTPUT_GATE bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'MEMORY' (17#1) [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MEMORY.vhd:38]
+INFO: [Synth 8-3491] module 'GP_IO_CTRL' declared at 'H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/GP_IO_CTRL.vhd:16' bound to instance 'IO_CONTROLLER' of component 'GP_IO_CTRL' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/TOPModule.vhd:361]
+INFO: [Synth 8-638] synthesizing module 'GP_IO_CTRL' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/GP_IO_CTRL.vhd:48]
+INFO: [Synth 8-3491] module 'lcd16x2_ctrl_demo' declared at 'H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:11' bound to instance 'DUT' of component 'lcd16x2_ctrl_demo' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/GP_IO_CTRL.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'lcd16x2_ctrl_demo' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:27]
+	Parameter CLK_PERIOD_NS bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'lcd_ctr' declared at 'H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd20x4ctrl.vhd:5' bound to instance 'DUT' of component 'lcd_ctr' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'lcd_ctr' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd20x4ctrl.vhd:23]
+	Parameter CLK_PERIOD_NS bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'lcd_ctr' (18#1) [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd20x4ctrl.vhd:23]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Synth 8-226] default block is never used [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:54]
+INFO: [Common 17-14] Message 'Synth 8-226' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'lcd16x2_ctrl_demo' (19#1) [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/lcd_demo.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'GP_IO_CTRL' (20#1) [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/GP_IO_CTRL.vhd:48]
+WARNING: [Synth 8-6014] Unused sequential element keep_entry_1_reg was removed.  [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/TOPModule.vhd:421]
+INFO: [Synth 8-256] done synthesizing module 'TOP_STORM_core' (21#1) [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/TOPModule.vhd:31]
+WARNING: [Synth 8-3331] design BUS_UNIT has unconnected port IC_P_CS_I
+WARNING: [Synth 8-3331] design CACHE__parameterized1 has unconnected port B_WE_I
+WARNING: [Synth 8-3331] design CACHE has unconnected port B_WE_I
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[46]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[45]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[44]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[43]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[42]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[41]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[40]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[39]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[38]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[37]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[36]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[35]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[34]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[33]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[32]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[31]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[30]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[29]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[28]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[27]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[21]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[20]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[19]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[18]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[17]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[16]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[15]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[14]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[13]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[12]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[11]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[10]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[4]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[3]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[2]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port CTRL_I[1]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[31]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[30]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[29]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[28]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[27]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[26]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[25]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[24]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[23]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[22]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[21]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[20]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[19]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[18]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[17]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[16]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[15]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[14]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[13]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[12]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[11]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[10]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[9]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[8]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[7]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[6]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[5]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[4]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[3]
+WARNING: [Synth 8-3331] design WB_UNIT has unconnected port ADR_BUFF_I[2]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[46]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[45]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[44]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[43]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[42]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[41]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[40]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[39]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[38]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[37]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[36]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[35]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[34]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[33]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[32]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[31]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[30]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[29]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[28]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[27]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[25]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[21]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[20]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[19]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[18]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[17]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[16]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[15]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[14]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[13]
+WARNING: [Synth 8-3331] design LOAD_STORE_UNIT has unconnected port CTRL_I[12]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 461.254 ; gain = 204.289
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 461.254 ; gain = 204.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 461.254 ; gain = 204.289
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [H:/VHDL/Research_Project/change1/change1.srcs/constrs_1/imports/Constrain/designclock.xdc]
+Finished Parsing XDC File [H:/VHDL/Research_Project/change1/change1.srcs/constrs_1/imports/Constrain/designclock.xdc]
+Parsing XDC File [H:/VHDL/Research_Project/change1/change1.srcs/constrs_1/imports/Constrain/pin.xdc]
+Finished Parsing XDC File [H:/VHDL/Research_Project/change1/change1.srcs/constrs_1/imports/Constrain/pin.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [H:/VHDL/Research_Project/change1/change1.srcs/constrs_1/imports/Constrain/pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_STORM_core_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_STORM_core_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 828.879 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 828.879 ; gain = 571.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 828.879 ; gain = 571.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 828.879 ; gain = 571.914
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "DEC_CTRL" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pc_in_list_v" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "REG_SEL" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_zero_v" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "MULTI_CYCLE_REQ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'CP_REG_FILE_reg[14][31:0]' into 'CP_REG_FILE_reg[15][31:0]' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MC_SYS.vhd:500]
+INFO: [Synth 8-4471] merging register 'CP_REG_FILE_reg[10][31:0]' into 'CP_REG_FILE_reg[15][31:0]' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MC_SYS.vhd:500]
+INFO: [Synth 8-4471] merging register 'CP_REG_FILE_reg[7][31:0]' into 'CP_REG_FILE_reg[15][31:0]' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MC_SYS.vhd:500]
+INFO: [Synth 8-4471] merging register 'CP_REG_FILE_reg[5][31:0]' into 'CP_REG_FILE_reg[15][31:0]' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MC_SYS.vhd:500]
+INFO: [Synth 8-4471] merging register 'CP_REG_FILE_reg[4][31:0]' into 'CP_REG_FILE_reg[15][31:0]' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MC_SYS.vhd:500]
+INFO: [Synth 8-4471] merging register 'CP_REG_FILE_reg[3][31:0]' into 'CP_REG_FILE_reg[15][31:0]' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MC_SYS.vhd:500]
+WARNING: [Synth 8-6014] Unused sequential element CP_REG_FILE_reg[14] was removed.  [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MC_SYS.vhd:500]
+WARNING: [Synth 8-6014] Unused sequential element CP_REG_FILE_reg[10] was removed.  [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MC_SYS.vhd:500]
+WARNING: [Synth 8-6014] Unused sequential element CP_REG_FILE_reg[7] was removed.  [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MC_SYS.vhd:500]
+WARNING: [Synth 8-6014] Unused sequential element CP_REG_FILE_reg[5] was removed.  [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MC_SYS.vhd:500]
+WARNING: [Synth 8-6014] Unused sequential element CP_REG_FILE_reg[4] was removed.  [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MC_SYS.vhd:500]
+WARNING: [Synth 8-6014] Unused sequential element CP_REG_FILE_reg[3] was removed.  [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MC_SYS.vhd:500]
+INFO: [Synth 8-5546] ROM "is_priv_mode_v" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MCR_CMSR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_FIQ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_FIQ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_FIQ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_SVC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_SVC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_SVC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_ABT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_ABT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_ABT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_IRQ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_IRQ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_IRQ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_UND" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_UND" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_UND" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_SYS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_SYS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_SYS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "is_priv_mode_v" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MCR_CMSR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_FIQ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_FIQ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_FIQ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_SVC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_SVC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_SVC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_ABT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_ABT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_ABT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_IRQ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_IRQ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_IRQ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_UND" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_UND" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_UND" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_SYS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_SYS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SMSR_SYS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "BR_CNT" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BR_CNT" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "MCR_PC" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "INT_VEC" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FLAG_BUS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "MCR_CMSR" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CP_REG_FILE[6]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "ADR_O" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "is_and_zero_v" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "is_out_zero_v" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "is_add_zero_v" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "is_xor_zero_v" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'ARB_STATE_reg' in module 'CACHE'
+INFO: [Synth 8-5544] ROM "temp_v" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "PAGE_BASE_ADR_reg[0]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "PAGE_BASE_ADR_reg[1]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "PAGE_BASE_ADR_reg[2]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "PAGE_BASE_ADR_reg[3]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "P_DATA_O_BUF" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "P_DATA_O_SEL" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ARB_STATE_NXT" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ARB_STATE_NXT" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ARB_STATE_NXT" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element CACHE_R_DATA_reg was removed.  [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/CACHE.vhd:545]
+INFO: [Synth 8-802] inferred FSM for state register 'ARB_STATE_reg' in module 'CACHE__parameterized1'
+INFO: [Synth 8-5544] ROM "temp_v" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "PAGE_BASE_ADR_reg[0]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "PAGE_BASE_ADR_reg[1]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "PAGE_BASE_ADR_reg[2]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "PAGE_BASE_ADR_reg[3]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "P_DATA_O_BUF" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "P_DATA_O_SEL" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ARB_STATE_NXT" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ARB_STATE_NXT" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ARB_STATE_NXT" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element CACHE_R_DATA_reg was removed.  [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/CACHE.vhd:545]
+INFO: [Synth 8-4471] merging register 'WB_CYC_O_reg' into 'WB_STB_O_reg' [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/BUS_UNIT.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element WB_CYC_O_reg was removed.  [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/BUS_UNIT.vhd:219]
+INFO: [Synth 8-802] inferred FSM for state register 'ARB_STATE_reg' in module 'BUS_UNIT'
+INFO: [Synth 8-5544] ROM "ARB_STATE_NXT" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "PAGE_BUF_NXT" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ARB_STATE_NXT" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ARB_STATE_NXT" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ARB_STATE_NXT" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'lcd_ctr'
+INFO: [Synth 8-802] inferred FSM for state register 'op_state_reg' in module 'lcd_ctr'
+INFO: [Synth 8-5544] ROM "cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "op_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_ptr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_op_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_op_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_op_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_op_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_op_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_op_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_op_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_op_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'lcd16x2_ctrl_demo'
+INFO: [Synth 8-5545] ROM "line3_buffer_O_S" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "line4_buffer_O_S" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "Memory[0]1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "a" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pulse_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pulse_var" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            storm_access |                              000 |                              000
+              io_request |                              001 |                              010
+          io_pipe_resync |                              010 |                              011
+      io_pipe_resync_end |                              011 |                              100
+              miss_state |                              100 |                              001
+             pipe_resync |                              101 |                              110
+             dirty_state |                              110 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ARB_STATE_reg' using encoding 'sequential' in module 'CACHE'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            storm_access |                              000 |                              000
+              io_request |                              001 |                              010
+          io_pipe_resync |                              010 |                              011
+      io_pipe_resync_end |                              011 |                              100
+              miss_state |                              100 |                              001
+             pipe_resync |                              101 |                              110
+             dirty_state |                              110 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ARB_STATE_reg' using encoding 'sequential' in module 'CACHE__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+         download_i_page |                              001 |                              100
+         download_d_page |                              010 |                              101
+              io_request |                              011 |                              011
+           assign_d_page |                              100 |                              001
+           upload_d_page |                              101 |                              010
+            end_transfer |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ARB_STATE_reg' using encoding 'sequential' in module 'BUS_UNIT'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reset |                       0000000001 |                             0000
+                  config |                       0000000010 |                             0001
+            select_line1 |                       0000000100 |                             0010
+             write_line1 |                       0000001000 |                             0011
+            select_line2 |                       0000010000 |                             0100
+             write_line2 |                       0000100000 |                             0101
+            select_line3 |                       0001000000 |                             0110
+             write_line3 |                       0010000000 |                             0111
+            select_line4 |                       0100000000 |                             1000
+             write_line4 |                       1000000000 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'lcd_ctr'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                       0000000001 |                             0000
+            wait_setup_h |                       0000000010 |                             0001
+                enable_h |                       0000000100 |                             0010
+             wait_hold_h |                       0000001000 |                             0011
+            wait_delay_h |                       0000010000 |                             0100
+            wait_setup_l |                       0000100000 |                             0101
+                enable_l |                       0001000000 |                             0110
+             wait_hold_l |                       0010000000 |                             0111
+            wait_delay_l |                       0100000000 |                             1000
+                    done |                       1000000000 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'op_state_reg' using encoding 'one-hot' in module 'lcd_ctr'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+                      s1 |                             0001 |                             0001
+                      s2 |                             0010 |                             0010
+                      s3 |                             0011 |                             0011
+                      s4 |                             0100 |                             0100
+                      s5 |                             0101 |                             0101
+                      s6 |                             0110 |                             0110
+                      s7 |                             0111 |                             0111
+                      s8 |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'lcd16x2_ctrl_demo'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 828.879 ; gain = 571.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |lcd16x2_ctrl_demo__GB0 |           1|     38572|
+|2     |lcd16x2_ctrl_demo__GB1 |           1|     26391|
+|3     |lcd16x2_ctrl_demo__GB2 |           1|     17165|
+|4     |lcd16x2_ctrl_demo__GB3 |           1|      5880|
+|5     |lcd16x2_ctrl_demo__GB4 |           1|     14526|
+|6     |GP_IO_CTRL__GC0        |           1|     37536|
+|7     |TOP_STORM_core__GC0    |           1|     28864|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 3     
+	   2 Input     32 Bit       Adders := 9     
+	   2 Input     30 Bit       Adders := 1     
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 5     
+	  16 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 5     
+	  32 Input      1 Bit         XORs := 1     
++---Registers : 
+	               47 Bit    Registers := 5     
+	               32 Bit    Registers := 119   
+	               28 Bit    Registers := 4     
+	               27 Bit    Registers := 1     
+	               26 Bit    Registers := 4     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	               15 Bit    Registers := 1     
+	                8 Bit    Registers := 8     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 15    
+	                1 Bit    Registers := 37    
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---RAMs : 
+	               8K Bit         RAMs := 1     
+	             1024 Bit         RAMs := 1     
+	              512 Bit         RAMs := 4     
+	              128 Bit         RAMs := 4     
++---Muxes : 
+	   9 Input    160 Bit        Muxes := 4     
+	   2 Input    160 Bit        Muxes := 30    
+	   2 Input    158 Bit        Muxes := 2     
+	   2 Input     47 Bit        Muxes := 27    
+	   3 Input     47 Bit        Muxes := 2     
+	   7 Input     47 Bit        Muxes := 1     
+	   4 Input     47 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 101   
+	   4 Input     32 Bit        Muxes := 12    
+	   5 Input     32 Bit        Muxes := 2     
+	   7 Input     32 Bit        Muxes := 20    
+	  10 Input     32 Bit        Muxes := 6     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 1     
+	   4 Input     28 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 2     
+	   4 Input     26 Bit        Muxes := 1     
+	  10 Input     20 Bit        Muxes := 3     
+	   2 Input     20 Bit        Muxes := 5     
+	  14 Input     18 Bit        Muxes := 1     
+	  14 Input     17 Bit        Muxes := 1     
+	   7 Input     16 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 9     
+	   4 Input     12 Bit        Muxes := 1     
+	   3 Input     12 Bit        Muxes := 1     
+	  10 Input     10 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 23    
+	  10 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   7 Input      6 Bit        Muxes := 1     
+	  10 Input      5 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 25    
+	  33 Input      5 Bit        Muxes := 4     
+	  10 Input      4 Bit        Muxes := 2     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 21    
+	   7 Input      4 Bit        Muxes := 7     
+	   4 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 7     
+	   2 Input      3 Bit        Muxes := 33    
+	   4 Input      3 Bit        Muxes := 2     
+	  16 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 10    
+	   4 Input      2 Bit        Muxes := 5     
+	   7 Input      2 Bit        Muxes := 5     
+	  10 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 184   
+	   9 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 49    
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module TOP_STORM_core 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module lcd_ctr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	  10 Input     20 Bit        Muxes := 3     
+	   2 Input     20 Bit        Muxes := 5     
+	  14 Input     18 Bit        Muxes := 1     
+	  14 Input     17 Bit        Muxes := 1     
+	  10 Input     10 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 22    
+	  10 Input      8 Bit        Muxes := 1     
+	  10 Input      5 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+Module lcd16x2_ctrl_demo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
++---Muxes : 
+	   9 Input    160 Bit        Muxes := 4     
+	   2 Input    160 Bit        Muxes := 30    
+	   2 Input    158 Bit        Muxes := 2     
+	   2 Input     27 Bit        Muxes := 2     
+	   9 Input      4 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module GP_IO_CTRL 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 66    
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 38    
+	   2 Input      1 Bit        Muxes := 64    
+Module OPCODE_DECODER 
+Detailed RTL Component Info : 
++---Adders : 
+	  16 Input      5 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     47 Bit        Muxes := 22    
+	   3 Input     47 Bit        Muxes := 2     
+	   7 Input     47 Bit        Muxes := 1     
+	   4 Input     47 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 5     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 9     
+	   4 Input     12 Bit        Muxes := 1     
+	   3 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 17    
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 15    
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 1     
+Module FLOW_CTRL 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               47 Bit    Registers := 5     
+	               32 Bit    Registers := 3     
+	               16 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     47 Bit        Muxes := 5     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 19    
+Module MC_SYS 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     30 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	  32 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 23    
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 24    
+	   7 Input     32 Bit        Muxes := 2     
+	  10 Input     32 Bit        Muxes := 6     
+	   4 Input     32 Bit        Muxes := 7     
+	   2 Input     30 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 7     
+	   7 Input      4 Bit        Muxes := 6     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 16    
+	   6 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 6     
+Module ADR_TRANSLATION_UNIT__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   7 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	  33 Input      5 Bit        Muxes := 1     
+Module ADR_TRANSLATION_UNIT__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   7 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	  33 Input      5 Bit        Muxes := 1     
+Module ADR_TRANSLATION_UNIT__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   7 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	  33 Input      5 Bit        Muxes := 1     
+Module ADR_TRANSLATION_UNIT 
+Detailed RTL Component Info : 
++---Muxes : 
+	   7 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	  33 Input      5 Bit        Muxes := 1     
+Module REG_FILE 
+Detailed RTL Component Info : 
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+Module OPERAND_UNIT 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module MULTIPLY_UNIT 
+Detailed RTL Component Info : 
++---Multipliers : 
+	                32x32  Multipliers := 1     
+Module BARREL_SHIFTER 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module MS_UNIT 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   8 Input     32 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module LOAD_STORE_UNIT 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module WB_UNIT 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module CACHE 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	               26 Bit    Registers := 4     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 3     
++---RAMs : 
+	              512 Bit         RAMs := 4     
++---Muxes : 
+	   7 Input     32 Bit        Muxes := 5     
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     26 Bit        Muxes := 1     
+	   7 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 23    
+	   7 Input      1 Bit        Muxes := 11    
+Module CACHE__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	               28 Bit    Registers := 4     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 3     
++---RAMs : 
+	              128 Bit         RAMs := 4     
++---Muxes : 
+	   7 Input     32 Bit        Muxes := 5     
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     28 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   7 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 23    
+	   7 Input      1 Bit        Muxes := 11    
+Module BUS_UNIT 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 7     
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 9     
+	               16 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   7 Input     32 Bit        Muxes := 4     
+	   7 Input     16 Bit        Muxes := 2     
+	   7 Input      7 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 5     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 22    
+	   3 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 21    
+Module MEMORY 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	               8K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_op_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_op_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_op_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_op_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_op_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_op_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_op_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_op_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "line3_buffer_O_S" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "line4_buffer_O_S" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory[0]1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "a" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "DEC_CTRL" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "MCR_CMSR" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SMSR_FIQ" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SMSR_SVC" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SMSR_ABT" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SMSR_IRQ" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SMSR_UND" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SMSR_SYS" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "write_access_data_port/ADR_O" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "read_access_port_a/ADR_O" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "read_access_port_b/ADR_O" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "read_access_port_c/ADR_O" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MULTIPLY_UNIT.vhd:40]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MULTIPLY_UNIT.vhd:40]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MULTIPLY_UNIT.vhd:40]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MULTIPLY_UNIT.vhd:40]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [H:/VHDL/Research_Project/change1/change1.srcs/sources_1/imports/Research_Project_ARM_Softcore/MULTIPLY_UNIT.vhd:40]
+DSP Report: Generating DSP Multiplicator/TEMP, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP Multiplicator/TEMP.
+DSP Report: operator Multiplicator/TEMP is absorbed into DSP Multiplicator/TEMP.
+DSP Report: operator Multiplicator/TEMP is absorbed into DSP Multiplicator/TEMP.
+DSP Report: Generating DSP Multiplicator/TEMP, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Multiplicator/TEMP is absorbed into DSP Multiplicator/TEMP.
+DSP Report: operator Multiplicator/TEMP is absorbed into DSP Multiplicator/TEMP.
+DSP Report: Generating DSP Multiplicator/TEMP, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP Multiplicator/TEMP.
+DSP Report: register A is absorbed into DSP Multiplicator/TEMP.
+DSP Report: operator Multiplicator/TEMP is absorbed into DSP Multiplicator/TEMP.
+DSP Report: operator Multiplicator/TEMP is absorbed into DSP Multiplicator/TEMP.
+DSP Report: Generating DSP Multiplicator/TEMP, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register A is absorbed into DSP Multiplicator/TEMP.
+DSP Report: operator Multiplicator/TEMP is absorbed into DSP Multiplicator/TEMP.
+DSP Report: operator Multiplicator/TEMP is absorbed into DSP Multiplicator/TEMP.
+INFO: [Synth 8-5545] ROM "is_out_zero_v" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "is_and_zero_v" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "is_xor_zero_v" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "is_add_zero_v" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "temp_v" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "temp_v" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "pulse_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pulse_var" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\STORM_TOP_INST/I_CACHE_INST /BIT_BUF_reg)
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[13][16]' (FDR) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[13][31]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[2][16]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][16]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[0][16]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[15][16]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[2][8]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][8]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[0][8]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[15][8]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/IMM_O_reg[24]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/IMM_O_reg[23]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[13][24]' (FDR) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[13][31]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[2][24]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][24]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[0][24]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[15][24]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[13][20]' (FDR) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[13][31]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[2][20]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][20]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[0][20]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[15][20]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[2][12]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][12]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[0][12]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[15][12]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/IMM_O_reg[28]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/IMM_O_reg[23]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[13][28]' (FDR) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[13][31]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[2][28]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][28]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[0][28]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[15][28]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[13][18]' (FDR) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[13][31]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[2][18]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][18]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[0][18]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[15][18]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[2][10]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][10]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[0][10]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[15][10]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/IMM_O_reg[26]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/IMM_O_reg[23]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[13][26]' (FDR) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[13][31]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[2][26]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][26]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[0][26]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[15][26]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[2][6]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][6]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[0][6]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[15][6]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[13][22]' (FDR) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[13][31]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[2][22]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][22]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[0][22]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[15][22]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[2][14]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][14]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[0][14]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[15][14]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/IMM_O_reg[30]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/IMM_O_reg[23]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[13][30]' (FDR) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[13][31]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[2][30]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][30]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[0][30]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[15][30]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[13][17]' (FDR) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[13][31]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[2][17]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][17]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[0][17]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[15][17]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[2][9]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][9]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[0][9]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[15][9]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/IMM_O_reg[25]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/IMM_O_reg[23]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[13][25]' (FDR) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[13][31]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[2][25]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][25]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[0][25]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[15][25]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[2][5]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][5]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[0][5]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[15][5]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[13][21]' (FDR) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[13][31]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[2][21]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][21]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[0][21]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[15][21]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[2][13]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][13]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[0][13]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[15][13]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/IMM_O_reg[29]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/IMM_O_reg[23]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[13][29]' (FDR) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[13][31]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[2][29]' (FDSE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][29]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[0][29]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[15][29]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[13][19]' (FDR) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[13][31]'
+INFO: [Synth 8-3886] merging instance 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[2][19]' (FDRE) to 'STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/CP_REG_FILE_reg[1][4]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\STORM_TOP_INST/PROCESSOR_CORE /Machine_Control_System/\CP_REG_FILE_reg[13][31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\STORM_TOP_INST/PROCESSOR_CORE /Machine_Control_System/\CP_REG_FILE_reg[2][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\STORM_TOP_INST/PROCESSOR_CORE /Machine_Control_System/\CP_REG_FILE_reg[15][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\STORM_TOP_INST/PROCESSOR_CORE /Machine_Control_System/\EXT_INT_REQ_SYNC_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\STORM_TOP_INST/PROCESSOR_CORE /Machine_Control_System/\EXT_INT_REQ_SYNC_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\STORM_TOP_INST/PROCESSOR_CORE /Operator/MS_OVFL_REG_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\STORM_TOP_INST/BUS_UNIT_INST /\BASE_BUF_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (DEC_CTRL_FF_reg[46]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MS_CTRL_reg[46]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MS_CTRL_reg[45]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MS_CTRL_reg[44]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MS_CTRL_reg[43]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MS_CTRL_reg[42]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MS_CTRL_reg[41]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MS_CTRL_reg[27]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MS_CTRL_reg[4]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MS_CTRL_reg[1]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (EX1_CTRL_reg[46]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (EX1_CTRL_reg[45]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (EX1_CTRL_reg[44]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (EX1_CTRL_reg[43]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (EX1_CTRL_reg[42]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (EX1_CTRL_reg[41]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (EX1_CTRL_reg[40]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (EX1_CTRL_reg[39]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (EX1_CTRL_reg[27]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (EX1_CTRL_reg[16]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (EX1_CTRL_reg[4]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (EX1_CTRL_reg[1]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[46]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[45]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[44]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[43]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[42]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[41]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[40]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[39]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[38]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[37]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[36]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[35]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[34]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[33]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[32]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[31]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[30]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[29]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[27]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[21]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[20]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[19]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[18]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[17]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[16]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[15]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[14]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[13]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[12]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[11]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[10]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[4]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[2]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (MEM_CTRL_reg[1]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[46]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[45]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[44]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[43]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[42]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[41]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[40]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[39]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[38]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[37]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[36]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[35]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[34]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[33]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[32]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[31]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[30]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[29]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[28]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[27]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[16]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[15]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[14]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[13]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[12]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[11]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[10]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[4]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[3]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[2]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (WB_CTRL_reg[1]) is unused and will be removed from module FLOW_CTRL.
+WARNING: [Synth 8-3332] Sequential element (IRQ_TAKEN_reg) is unused and will be removed from module MC_SYS.
+WARNING: [Synth 8-3332] Sequential element (FIQ_TAKEN_reg) is unused and will be removed from module MC_SYS.
+WARNING: [Synth 8-3332] Sequential element (EXT_INT_REQ_SYNC_reg[1]) is unused and will be removed from module MC_SYS.
+WARNING: [Synth 8-3332] Sequential element (EXT_INT_REQ_SYNC_reg[0]) is unused and will be removed from module MC_SYS.
+WARNING: [Synth 8-3332] Sequential element (CP_REG_FILE_reg[13][31]) is unused and will be removed from module MC_SYS.
+WARNING: [Synth 8-3332] Sequential element (CP_REG_FILE_reg[2][4]) is unused and will be removed from module MC_SYS.
+WARNING: [Synth 8-3332] Sequential element (CP_REG_FILE_reg[15][4]) is unused and will be removed from module MC_SYS.
+WARNING: [Synth 8-3332] Sequential element (MS_OVFL_REG_reg) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (ADR_BUF_reg[1]) is unused and will be removed from module CACHE.
+WARNING: [Synth 8-3332] Sequential element (ADR_BUF_reg[0]) is unused and will be removed from module CACHE.
+WARNING: [Synth 8-3332] Sequential element (BIT_BUF_reg) is unused and will be removed from module CACHE.
+WARNING: [Synth 8-3332] Sequential element (IC_P_ADR_BUF_reg[5]) is unused and will be removed from module BUS_UNIT.
+WARNING: [Synth 8-3332] Sequential element (IC_P_ADR_BUF_reg[4]) is unused and will be removed from module BUS_UNIT.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:36 ; elapsed = 00:02:24 . Memory (MB): peak = 828.879 ; gain = 571.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|MEMORY:     | MEM_FILE_reg | 256 x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++----------------------------------------------+------------------+-----------+----------------------+----------------+
+|Module Name                                   | RTL Object       | Inference | Size (Depth x Width) | Primitives     | 
++----------------------------------------------+------------------+-----------+----------------------+----------------+
+|\STORM_TOP_INST/PROCESSOR_CORE /Register_File | REG_FILE_reg     | Implied   | 32 x 32              | RAM32M x 18    | 
+|\STORM_TOP_INST/I_CACHE_INST                  | CACHE_MEM_LL_reg | Implied   | 64 x 8               | RAM64X1S x 8   | 
+|\STORM_TOP_INST/I_CACHE_INST                  | CACHE_MEM_LH_reg | Implied   | 64 x 8               | RAM64X1S x 8   | 
+|\STORM_TOP_INST/I_CACHE_INST                  | CACHE_MEM_HL_reg | Implied   | 64 x 8               | RAM64X1S x 8   | 
+|\STORM_TOP_INST/I_CACHE_INST                  | CACHE_MEM_HH_reg | Implied   | 64 x 8               | RAM64X1S x 8   | 
+|\STORM_TOP_INST/D_CACHE_INST                  | CACHE_MEM_LL_reg | Implied   | 16 x 8               | RAM16X1S x 8   | 
+|\STORM_TOP_INST/D_CACHE_INST                  | CACHE_MEM_LH_reg | Implied   | 16 x 8               | RAM16X1S x 8   | 
+|\STORM_TOP_INST/D_CACHE_INST                  | CACHE_MEM_HL_reg | Implied   | 16 x 8               | RAM16X1S x 8   | 
+|\STORM_TOP_INST/D_CACHE_INST                  | CACHE_MEM_HH_reg | Implied   | 16 x 8               | RAM16X1S x 8   | 
++----------------------------------------------+------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|MS_UNIT     | A2*B            | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|MS_UNIT     | (PCIN>>17)+A*B  | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MS_UNIT     | A2*B2           | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|MS_UNIT     | (PCIN>>17)+A2*B | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance i_0/i_1/INTERNAL_MEMORY/MEM_FILE_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/i_1/INTERNAL_MEMORY/MEM_FILE_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |lcd16x2_ctrl_demo__GB0 |           1|      5595|
+|2     |lcd16x2_ctrl_demo__GB1 |           1|      1081|
+|3     |lcd16x2_ctrl_demo__GB2 |           1|       650|
+|4     |lcd16x2_ctrl_demo__GB3 |           1|      1064|
+|5     |lcd16x2_ctrl_demo__GB4 |           1|      2267|
+|6     |GP_IO_CTRL__GC0        |           1|      4449|
+|7     |TOP_STORM_core__GC0    |           1|     12963|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:50 ; elapsed = 00:02:39 . Memory (MB): peak = 828.879 ; gain = 571.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IO_CONTROLLERi_6/\IO_I_SYNC_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\STORM_TOP_INST/BUS_UNIT_INST /WB_ERR_BUF_reg)
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:57 ; elapsed = 00:02:46 . Memory (MB): peak = 866.402 ; gain = 609.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|MEMORY:     | MEM_FILE_reg | 256 x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping  Report
++----------------------------------------------+------------------+-----------+----------------------+----------------+
+|Module Name                                   | RTL Object       | Inference | Size (Depth x Width) | Primitives     | 
++----------------------------------------------+------------------+-----------+----------------------+----------------+
+|\STORM_TOP_INST/PROCESSOR_CORE /Register_File | REG_FILE_reg     | Implied   | 32 x 32              | RAM32M x 18    | 
+|\STORM_TOP_INST/I_CACHE_INST                  | CACHE_MEM_LL_reg | Implied   | 64 x 8               | RAM64X1S x 8   | 
+|\STORM_TOP_INST/I_CACHE_INST                  | CACHE_MEM_LH_reg | Implied   | 64 x 8               | RAM64X1S x 8   | 
+|\STORM_TOP_INST/I_CACHE_INST                  | CACHE_MEM_HL_reg | Implied   | 64 x 8               | RAM64X1S x 8   | 
+|\STORM_TOP_INST/I_CACHE_INST                  | CACHE_MEM_HH_reg | Implied   | 64 x 8               | RAM64X1S x 8   | 
+|\STORM_TOP_INST/D_CACHE_INST                  | CACHE_MEM_LL_reg | Implied   | 16 x 8               | RAM16X1S x 8   | 
+|\STORM_TOP_INST/D_CACHE_INST                  | CACHE_MEM_LH_reg | Implied   | 16 x 8               | RAM16X1S x 8   | 
+|\STORM_TOP_INST/D_CACHE_INST                  | CACHE_MEM_HL_reg | Implied   | 16 x 8               | RAM16X1S x 8   | 
+|\STORM_TOP_INST/D_CACHE_INST                  | CACHE_MEM_HH_reg | Implied   | 16 x 8               | RAM16X1S x 8   | 
++----------------------------------------------+------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |lcd16x2_ctrl_demo__GB0 |           1|      5024|
+|2     |lcd16x2_ctrl_demo__GB1 |           1|      1072|
+|3     |lcd16x2_ctrl_demo__GB2 |           1|       642|
+|4     |lcd16x2_ctrl_demo__GB3 |           1|      1064|
+|5     |lcd16x2_ctrl_demo__GB4 |           1|      2267|
+|6     |GP_IO_CTRL__GC0        |           1|      4326|
+|7     |TOP_STORM_core__GC0    |           1|     12938|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance i_0/INTERNAL_MEMORY/MEM_FILE_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/INTERNAL_MEMORY/MEM_FILE_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:01 ; elapsed = 00:03:07 . Memory (MB): peak = 886.332 ; gain = 629.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |lcd16x2_ctrl_demo__GB0 |           1|      1330|
+|2     |lcd16x2_ctrl_demo__GB1 |           1|       620|
+|3     |lcd16x2_ctrl_demo__GB2 |           1|       391|
+|4     |lcd16x2_ctrl_demo__GB3 |           1|       336|
+|5     |lcd16x2_ctrl_demo__GB4 |           1|       753|
+|6     |GP_IO_CTRL__GC0        |           1|      3246|
+|7     |TOP_STORM_core__GC0    |           1|      5661|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance INTERNAL_MEMORY/MEM_FILE_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance INTERNAL_MEMORY/MEM_FILE_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:05 ; elapsed = 00:03:11 . Memory (MB): peak = 886.332 ; gain = 629.367
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:05 ; elapsed = 00:03:11 . Memory (MB): peak = 886.332 ; gain = 629.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:06 ; elapsed = 00:03:12 . Memory (MB): peak = 886.332 ; gain = 629.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:06 ; elapsed = 00:03:12 . Memory (MB): peak = 886.332 ; gain = 629.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:07 ; elapsed = 00:03:13 . Memory (MB): peak = 886.332 ; gain = 629.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:07 ; elapsed = 00:03:13 . Memory (MB): peak = 886.332 ; gain = 629.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |   180|
+|3     |DSP48E1  |     3|
+|4     |LUT1     |    41|
+|5     |LUT2     |   352|
+|6     |LUT3     |   941|
+|7     |LUT4     |  1536|
+|8     |LUT5     |  1604|
+|9     |LUT6     |  2852|
+|10    |MUXF7    |    95|
+|11    |MUXF8    |     3|
+|12    |RAM16X1S |    32|
+|13    |RAM32M   |    18|
+|14    |RAM64X1S |    32|
+|15    |RAMB18E1 |     1|
+|16    |FDCE     |    31|
+|17    |FDRE     |  3084|
+|18    |FDSE     |  1063|
+|19    |IBUF     |     5|
+|20    |OBUF     |     6|
++------+---------+------+
+
+Report Instance Areas: 
++------+-----------------------------+----------------------+------+
+|      |Instance                     |Module                |Cells |
++------+-----------------------------+----------------------+------+
+|1     |top                          |                      | 11881|
+|2     |  INTERNAL_MEMORY            |MEMORY                |     2|
+|3     |  IO_CONTROLLER              |GP_IO_CTRL            |  6227|
+|4     |    DUT                      |lcd16x2_ctrl_demo     |  2169|
+|5     |      DUT                    |lcd_ctr               |   432|
+|6     |  STORM_TOP_INST             |STORM_TOP             |  5553|
+|7     |    BUS_UNIT_INST            |BUS_UNIT              |   998|
+|8     |    D_CACHE_INST             |CACHE__parameterized1 |   652|
+|9     |    I_CACHE_INST             |CACHE                 |   473|
+|10    |    PROCESSOR_CORE           |CORE                  |  3426|
+|11    |      Multishifter           |MS_UNIT               |   697|
+|12    |        Multiplicator        |MULTIPLY_UNIT         |    54|
+|13    |      Data_Write_Back        |WB_UNIT               |    34|
+|14    |      Machine_Control_System |MC_SYS                |   883|
+|15    |      Memory_Access          |LOAD_STORE_UNIT       |   180|
+|16    |      Operation_Flow_Control |FLOW_CTRL             |  1482|
+|17    |      Operator               |ALU                   |   132|
+|18    |      Register_File          |REG_FILE              |    18|
++------+-----------------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:07 ; elapsed = 00:03:13 . Memory (MB): peak = 886.332 ; gain = 629.367
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 214 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:43 ; elapsed = 00:02:59 . Memory (MB): peak = 886.332 ; gain = 261.742
+Synthesis Optimization Complete : Time (s): cpu = 00:02:07 ; elapsed = 00:03:14 . Memory (MB): peak = 886.332 ; gain = 629.367
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 369 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 82 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 32 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 18 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+569 Infos, 221 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:12 ; elapsed = 00:03:19 . Memory (MB): peak = 886.332 ; gain = 642.328
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'H:/VHDL/Research_Project/change1/change1.runs/synth_1/TOP_STORM_core.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TOP_STORM_core_utilization_synth.rpt -pb TOP_STORM_core_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.111 . Memory (MB): peak = 886.332 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jan  7 20:30:08 2019...
