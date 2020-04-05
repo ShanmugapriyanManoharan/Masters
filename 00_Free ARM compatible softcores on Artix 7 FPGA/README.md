@@ -22,5 +22,7 @@ The Debug has the push button control switches Start, Stop, Step and Reset to co
 execution of program running on the STORM core.
 
 Programming Language: VHDL
+
 Board: Artix 7
+
 IDE: Xilinx Vivado
