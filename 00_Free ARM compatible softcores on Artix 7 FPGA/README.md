@@ -23,6 +23,6 @@ execution of program running on the STORM core.
 
 Programming Language: VHDL
 
-Board: Artix 7
+Board: Artix 7 FPGA
 
 IDE: Xilinx Vivado
