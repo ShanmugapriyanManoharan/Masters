@@ -20,6 +20,7 @@ The data from the IO controller is extracted from STORM core which is running on
 The extracted data is displayed on LCD display connected to the FPGA on a Debug board.
 The Debug has the push button control switches Start, Stop, Step and Reset to control the
 execution of program running on the STORM core.
+
 Programming Language: VHDL
 Board: Artix 7
 IDE: Xilinx Vivado
