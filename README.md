@@ -1,5 +1,4 @@
 # Masters
-Projects done during Master study
 
 00: Free ARM compatible softcores on Artix 7 FPGA
 
