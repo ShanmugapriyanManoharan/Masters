@@ -1,6 +1,4 @@
-# Masters
-
-00: Free ARM compatible softcores on Artix 7 FPGA
+# Free ARM compatible softcores on Artix 7 FPGA
 
 ARM processor is a 32-bit Reduced Instruction Set Computer (RISC) processor, Instruction Set
 Architecture (ISA). The ARM architecture has the best MIPS to Watts ratio as well as best
